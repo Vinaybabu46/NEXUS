@@ -68,7 +68,7 @@ const App = () => {
         speak("Generation failed. Security protocols engaged.");
       }
     } catch (error) {
-      setLogs(prev => [...prev, `❌ CONNECTION ERROR: ${error.message}`]);
+      setLogs(prev => [...prev, ` CONNECTION ERROR: ${error.message}`]);
       setStatus('FAILED');
       speak("Connection lost. Please check backend services.");
     }
@@ -168,4 +168,5 @@ const App = () => {
     </div>
   );
 };
+
 export default App;
